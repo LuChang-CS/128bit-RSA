@@ -1,54 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<style type="text/css">
-		h1 {
-			font-size: 1.8em;
-			margin-bottom: 0.4em;
-			line-height: 1.5;
-		}
-		hr {
-			margin-bottom: 1.8em;
-			margin-top: 20px;
-			border: 0;
-			border-top: 1px solid #eeeeee;
-		}
-		p {
-			margin-bottom: 1.8em;
-			margin: 0 0 10px;
-			padding: 0;
-			display: block;
-			-webkit-margin-before: 1em;
-			-webkit-margin-after: 1em;
-			-webkit-margin-start: 0px;
-			-webkit-margin-end: 0px;
-		}
-		blockquote {
-			border-left: 10px solid rgba(102,128,153,0.075);
-			background-color: rgba(102,128,153,0.05);
-			border-top-right-radius: 5px;
-			border-bottom-right-radius: 5px;
-			padding: 2px 20px;
-			color: #666;
-			font-size: 1.2em;
-			margin: 0 0 20px;
-			position: relative;
-			font-weight: 300;
-		}
-		img {
-			width: 60%;
-			height: 60%;
-			margin: 0;
-			display: block;
-		}
-	</style>
-	<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
-</head>
-
-<body>
-	<h1>RSA 说明文档&nbsp;</h1><hr>
+<h1>RSA 说明文档&nbsp;</h1><hr>
 	<h3><b>1. 环境配置及访问说明</b></h3>
 	<p>&nbsp; &nbsp; &nbsp; &nbsp; 本次提交的 RSA 算法实现采用 64位 php 进行后台编写，若要在本机运行请配置好服务器环境并将相关文件放在服务器目录下。（如需上传文件，php 需开启文件上传功能，并修改上传文件大小限制）。</p>
 	<p>&nbsp; &nbsp; &nbsp; &nbsp; 建议使用最新版 chrome、firefox 浏览器，不推荐使用 IE 浏览器。</p>
@@ -69,5 +19,3 @@
 	<p>&nbsp; &nbsp; &nbsp; &nbsp; 加密（解密）完成后可选择导出密文（明文）。单击“导出密文（明文）”按钮即可导出 txt 格式的文件。</p>
 	<h3><b>4. DES操作说明</b></h3>
 	<p>&nbsp; &nbsp; &nbsp; &nbsp; 在选择操作栏中单击生成 DES 加密解密，即可进入 DES 加密解密页面，加密解密操作类似于 RSA 加密解密。</p>
-</body>
-</html>
