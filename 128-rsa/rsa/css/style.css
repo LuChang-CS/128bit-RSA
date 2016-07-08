@@ -1,0 +1,305 @@
+@charset "UTF-8";
+body {
+	font-family: "微软雅黑", "黑体";
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#header{
+	background-color: #006cbf;
+	padding-top: 5px;
+	height: 50px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	box-shadow: 0 2px 3px 2px #36648B;
+	z-index: 999;
+}
+
+.headtitle {
+	color: white;
+	float: left;
+}
+
+.headtitle h1 {
+	font-size: 30px;
+	margin: 5px 0 0 0;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.help {
+	float: right;
+	color: black;
+	width: 32px;
+	height: 38px;
+	padding-top: 12px;
+}
+
+.help a {
+	color: white;
+	font-size: 14px;
+	margin: 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.help a:hover {
+	text-decoration: none;
+	color: #E8E8E8;
+}
+
+.help a:active {
+	text-decoration: none;
+	color: #A9A9A9;
+}
+
+#content {
+	margin-top: 20px;
+}
+
+.space {
+	width: 100%;
+	height: 10px;
+}
+
+.name {
+	width: 100%;
+	height: 50px;
+}
+
+.name p {
+	color: #777;
+	font-size: 24px;
+	margin: 0;
+}
+
+.select-div {
+	font-size: 13px;
+	height: 65px;
+}
+
+.select {
+	border-bottom: 1px solid #ddd;
+}
+
+.select-div ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	height: 36px;
+	clear: both;
+}
+
+.select li {
+	display:inline-block;
+	margin: 0;
+	padding: 8px 8px 12px 8px;
+	height: 36px;
+}
+
+.select .item {
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	color: #006cbf;
+	cursor: pointer;
+}
+
+.select .current-item {
+	color: #777;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-bottom: transparent;
+	border-radius: 4px 4px 0 0;
+	cursor: default;
+}
+
+.select .current-item:hover {
+	background: #fff;
+}
+
+.select .item:hover {
+	background: #eee;
+}
+
+.bar {
+	width: 1000px;
+	height: 600px;
+}
+
+.bar .sidebar {
+	width: 420px;
+	height: 440px;
+	margin: 0;
+}
+
+.sidebar .textname {
+	height: 40px;
+}
+
+.textname p {
+	color: #333333;
+	font-size: 16px;
+	margin: 0;
+}
+
+.sidebar .text {
+	width: 420px;
+	height: 370px;
+}
+
+.sidebar .text :focus{
+	transition: border linear .1s, box-shadow linear .1s;
+	-ms-transition: border linear .1s, -ms-box-shadow linear .1s;
+	-o-transition: border linear .1s, -o-box-shadow linear .1s;
+    -moz-transition: border linear .1s, -moz-box-shadow  linear .1s;
+    -webkit-transition: border linear .1s, -webkit-box-shadow linear .1s;
+    outline: none;
+	border:1px solid rgba(82, 168, 236, 0.6);
+	box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+textarea {
+	width: 420px;
+	height: 370px;
+	font-size: 16px;
+	padding: 8px 8px 8px 8px;
+	color: #555555;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	outline: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	letter-spacing: 2px;
+	resize: none;
+}
+
+textarea[disabled] {
+	background: #fff;
+}
+
+.bar .centerbar {
+	width: 160px;
+	height: 440px;
+	margin: 0;
+	float: left;
+}
+
+.centerbar p {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.centerbar h1 {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.centerbar img {
+	margin-left: 8px;
+	width: 14px;
+	height: 14px;
+}
+
+.centerbar .opbtndiv {
+	margin-top: 183px;
+}
+
+.centerbar .opbtn {
+	background: #0075cc;
+	border: 1px solid #0065cc;
+	border-radius: 4px;
+	color: white;
+	font-size: 14px;
+	padding: 5px 10px 5px 10px;
+	outline: none;
+	text-shadow: 0px -1px rgba(0, 0, 0, 0.5);
+}
+
+.centerbar .opbtn strong:hover, .centerbar .opbtn strong:active {
+	border: none;
+}
+
+.centerbar p :hover {
+	background: #0055cc;
+	border: 1px solid #0045cc;
+}
+
+.centerbar p :active {
+	background: #0035cc;
+	border: 1px solid #0025cc;
+}
+
+.bar .footbar {
+	width: 1000px;
+	height: 160px;
+	float: left;
+}
+
+.footbar .keyname {
+	width: 1000px;
+	height: 40px;
+}
+
+.keyname p {
+	color: #333333;
+	font-size: 16px;
+	margin: 0;
+}
+
+.footbar .key {
+	width: 1000px;
+	height: 80px;
+}
+
+.footbar .key :focus{
+	transition: border linear .1s, box-shadow linear .1s;
+	-ms-transition: border linear .1s, -ms-box-shadow linear .1s;
+	-o-transition: border linear .1s, -o-box-shadow linear .1s;
+    -moz-transition: border linear .1s, -moz-box-shadow  linear .1s;
+    -webkit-transition: border linear .1s, -webkit-box-shadow linear .1s;
+    outline: none;
+	border:1px solid rgba(82, 168, 236, 0.6);
+	box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.topfoot {
+	width: 100%;
+	height: 90px;
+	background: #CDC9C9;
+	border-top: silver;
+}
+
+.topfoot .space {
+	width: 1000px;
+	background: #CDC9C9;
+}
+
+.topfoot .foot {
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+	background: #CDC9C9;
+	text-align: center;
+}
+
+.foot .text {
+	margin: 0;
+	height: 50px;
+}
+
+.text table {
+	width: 100%;
+}
+
+.text td {
+	color: black;
+	width: 100%;
+	height: 50px;
+	align: center;
+	valign: middle;
+}

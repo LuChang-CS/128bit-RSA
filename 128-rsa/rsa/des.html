@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+    <title>DES 加密解密</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/jquery.fileupload.css">
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <script src="js/sendDES.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/jquery.ui.widget.js"></script>
+    <script src="js/jquery.iframe-transport.js"></script>
+    <script src="js/jquery.fileupload.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="wrapper">
+            <div class="headtitle">
+                <h1>DES 加密解密</h1>
+            </div>
+            <div class="help">
+                <a href="manual.html" target="_blank">帮助</a>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="wrapper">
+        <div class="name">
+            <p>64位 DES 算法的6轮实现</p><br />
+        </div>
+        <div class="select-div">
+            <ul class="select">
+                <li class="item" onclick="javascript:location.href='rsa.html'">RSA 加密/解密</li>
+                <li class="current-item">DES 加密/解密</li>
+            </ul>
+        </div>
+        <div class="bar">
+            <div class="sidebar" style="float: left">
+                <div class="textname">
+                    <p>明文：
+                        <span class="btn btn-success fileinput-button">
+                            <span>选择文件</span>
+                            <input type="file" id="upload_plaintext" name="filetext" accept=".txt" multiple>
+                        </span>
+                        <span class="btn btn-primary start" onclick="exportText('plaintext')">
+                            <span>导出明文</span>
+                        </span>
+                    </p>
+                </div>
+                <div id="progressEnc" class="progress" style="margin: 5px 0 5px 0">
+                    <div class="progress-bar progress-bar-success"></div>
+                </div>
+                <div class="text">
+                    <form action="php/exportText.php" method="post" id="exportPlain">
+                        <textarea placeholder="明文" id="plaintext" name="content"></textarea>
+                        <input type="hidden" name="type" id="hiddenPlain">
+                    </form>
+                </div>
+            </div>
+            <div class="centerbar">
+                <div class="opbtndiv">
+                    <p><button class="opbtn" onclick="send('encrypt')">加密 <strong>&gt;</strong></button></p>
+                    <div class="space"></div>
+                    <p><button class="opbtn" onclick="send('decrypt')"><strong>&lt;</strong> 解密</button></p>
+                </div>
+                <h1 id='msg'></h1>
+            </div>
+            <div class="sidebar" style="float: right">
+                <div class="textname">
+                    <p>密文：
+                        <span class="btn btn-success fileinput-button">
+                            <span>选择文件</span>
+                            <input type="file" id="upload_cypertext" name="filetext" accept=".txt" multiple>
+                        </span>
+                        <span class="btn btn-primary start" onclick="exportText('ciphertext')">
+                            <span>导出密文</span>
+                        </span>
+                    </p>
+                </div>
+                <div id="progressDec" class="progress" style="margin: 5px 0 5px 0">
+                    <div class="progress-bar progress-bar-success"></div>
+                </div>
+                <div class="text">
+                    <form action="php/exportText.php" method="post" id="exportCipher">
+                        <textarea placeholder="密文" id="cypertext" name="content"></textarea>
+                        <input type="hidden" name="type" id="hiddenCypher">
+                    </form>
+                </div>
+            </div>
+            <div class="footbar">
+                <div class="space"></div>
+                <div class="keyname">
+                    <p>密钥：</p>
+                </div>
+                <div class="key">
+                    <textarea placeholder="密钥" id="key" style="width: 1000px; height: 40px"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="topfoot">
+        <div class="space" style="width: 1000px"></div>
+        <div class="foot">
+            <div class="text">
+                <table>
+                    <tr><td>Copyright © 2014 LuChang. All Rights Reserved.</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/Notifier.js"></script>
+</body>
+
+</html>
